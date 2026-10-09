@@ -1,0 +1,10 @@
+{
+  "name": "Check empty-input bug fix",
+  "checks": [
+    {
+      "name": "Empty input handler exists",
+      "path": "parser.py",
+      "contains": "handle_empty"
+    }
+  ]
+}

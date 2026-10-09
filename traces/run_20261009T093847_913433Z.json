@@ -1,0 +1,20 @@
+{
+  "task": "Repair empty-input bug",
+  "passed": false,
+  "results": [
+    {
+      "check": "Empty list is handled",
+      "passed": false,
+      "message": "Expected text not found in benchmarks/sample_project/parse_items_broken.py"
+    },
+    {
+      "check": "Behavioral tests",
+      "passed": false,
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "test_empty_list_returns_none (tests.test_parse_items_broken.TestBrokenParseItems.test_empty_list_returns_none) ... ERROR\ntest_non_empty_list_returns_first_item (tests.test_parse_items_broken.TestBrokenParseItems.test_non_empty_list_returns_first_item) ... ok\n\n======================================================================\nERROR: test_empty_list_returns_none (tests.test_parse_items_broken.TestBrokenParseItems.test_empty_list_returns_none)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Gundu\\Desktop\\AgentCI\\tests\\test_parse_items_broken.py\", line 14, in test_empty_list_returns_none\n    self.assertIsNone(parse([]))\n                      ~~~~~^^^^\n  File \"C:\\Users\\Gundu\\Desktop\\AgentCI\\benchmarks\\sample_project\\parse_items_broken.py\", line 2, in parse\n    return items[0]\n           ~~~~~^^^\nIndexError: list index out of range\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nFAILED (errors=1)\n"
+    }
+  ],
+  "timestamp": "2026-10-09T09:38:47.913088+00:00",
+  "project": "C:\\Users\\Gundu\\Desktop\\AgentCI"
+}

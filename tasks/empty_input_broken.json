@@ -1,0 +1,11 @@
+{
+  "name": "Repair empty-input bug",
+  "description": "Fix parse(items) so an empty list returns None and a non-empty list returns its first item.",
+  "checks": [
+    {
+      "name": "Empty list is handled",
+      "path": "benchmarks/sample_project/parse_items_broken.py",
+      "contains": "if not items:"
+    }
+  ]
+}

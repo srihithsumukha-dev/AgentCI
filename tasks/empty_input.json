@@ -1,0 +1,11 @@
+
+{
+  "name": "Handle empty input safely",
+  "checks": [
+    {
+      "name": "Empty list is handled",
+      "path": "benchmarks/sample_project/parse_items.py",
+      "contains": "if not items:"
+    }
+  ]
+}
